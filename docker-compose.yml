@@ -1,0 +1,16 @@
+services:
+  postgraphile:
+    image: graphile/postgraphile:4
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - DEBUG=${DEBUG}
+    command: [
+      "--connection", "${DATABASE_URL}",
+      "--schema", "myenergy",
+      "--enhance-graphiql",
+      "--jwt-verify-audience", "",
+      "--jwt-role", "role"
+    ]
