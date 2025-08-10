@@ -12,5 +12,6 @@ services:
       "--schema", "myenergy",
       "--enhance-graphiql",
       "--jwt-verify-audience", "",
-      "--jwt-role", "role"
+      "--jwt-role", "role",
+      "--jwt-token-identifier", "myenergy.jwt_claims"
     ]
