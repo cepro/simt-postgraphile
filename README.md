@@ -1,5 +1,11 @@
 # simt-postgraphile
 
+## Overview
+
+Use this repo to start up a local instance of postgraphile with our setup.
+
+See supabase-host repo and fly/postgraphile for how the deployed version is configured.
+
 ## Get Started
 
 ```sh
